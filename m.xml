@@ -1,31 +1,21 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="17" inline="false" x="26" y="56">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
+  <block type="controls_if" id="3" inline="false" x="69" y="90">
+    <value name="IF0">
       <block type="sensor_button" id="4">
         <field name="OBJECT">UP</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="controls_if" id="3" inline="false">
-        <value name="IF0">
-          <block type="sensor_object" id="24">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_forward" id="5">
-            <next>
-              <block type="robot_delay" id="6" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="7">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
+    <statement name="DO0">
+      <block type="movement_forward" id="5">
+        <next>
+          <block type="robot_delay" id="6" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="7">
+                <field name="NUM">1000</field>
               </block>
-            </next>
+            </value>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
     <next>
