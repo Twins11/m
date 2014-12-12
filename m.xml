@@ -17,28 +17,41 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_right" id="126">
+                  <block type="movement_forward" id="136">
                     <next>
-                      <block type="robot_delay" id="56" inline="true">
+                      <block type="robot_delay" id="138" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="63">
-                            <field name="NUM">2000</field>
+                          <block type="math_number" id="147">
+                            <field name="NUM">1000</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_forward" id="83">
+                          <block type="movement_right" id="126">
                             <next>
-                              <block type="robot_delay" id="85" inline="true">
+                              <block type="robot_delay" id="56" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="92">
-                                    <field name="NUM">5000</field>
+                                  <block type="math_number" id="63">
+                                    <field name="NUM">2000</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_drawtext" id="44">
-                                    <field name="TEXT">i am back</field>
+                                  <block type="movement_forward" id="83">
                                     <next>
-                                      <block type="movement_stop" id="6"></block>
+                                      <block type="robot_delay" id="85" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="92">
+                                            <field name="NUM">5000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawtext" id="44">
+                                            <field name="TEXT">i am back</field>
+                                            <next>
+                                              <block type="movement_stop" id="6"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
