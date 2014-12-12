@@ -1,8 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="176" inline="false" x="-6" y="48">
     <value name="IF0">
-      <block type="sensor_light" id="248">
-        <field name="LIGHT">LEFT</field>
+      <block type="sensor_button" id="255">
+        <field name="OBJECT">DOWN</field>
       </block>
     </value>
     <statement name="DO0">
@@ -11,7 +11,7 @@
           <block type="robot_delay" id="45" inline="true">
             <value name="DELAY">
               <block type="math_number" id="52">
-                <field name="NUM">500</field>
+                <field name="NUM">1000</field>
               </block>
             </value>
           </block>
