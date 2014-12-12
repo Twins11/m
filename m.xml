@@ -1,25 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="176" inline="false" x="-6" y="48">
-    <value name="IF0">
-      <block type="sensor_spectrometer" id="262">
-        <field name="LIGHT">BLUE</field>
+  <block type="variables_set" id="26" inline="true" x="-3" y="14">
+    <field name="VAR">item</field>
+    <value name="VALUE">
+      <block type="math_number" id="33">
+        <field name="NUM">0</field>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_forward" id="10">
-        <next>
-          <block type="robot_delay" id="45" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="52">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
+    <next>
+      <block type="controls_if" id="1" inline="false">
+        <value name="IF0">
+          <block type="sensor_button" id="3">
+            <field name="OBJECT">UP</field>
           </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="4">
+            <next>
+              <block type="robot_delay" id="5" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="6">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="7"></block>
         </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="234"></block>
     </next>
   </block>
 </xml>
