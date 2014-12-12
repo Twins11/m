@@ -35,19 +35,6 @@
                             <field name="NUM">1500</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_stutter" id="151">
-                            <next>
-                              <block type="robot_delay" id="153" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="160">
-                                    <field name="NUM">700</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
