@@ -1,8 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="176" inline="false" x="-6" y="48">
     <value name="IF0">
-      <block type="sensor_button" id="241">
-        <field name="OBJECT">UP</field>
+      <block type="sensor_light" id="248">
+        <field name="LIGHT">LEFT</field>
       </block>
     </value>
     <statement name="DO0">
