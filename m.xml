@@ -1,25 +1,80 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="3" inline="false" x="69" y="90">
-    <value name="IF0">
-      <block type="sensor_button" id="4">
-        <field name="OBJECT">DOWN</field>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="movement_forward" id="5">
+  <block type="movement_forward" id="3" x="86" y="55">
+    <next>
+      <block type="robot_delay" id="4" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="5">
+            <field name="NUM">1000</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="6" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="7">
-                <field name="NUM">1000</field>
+          <block type="movement_right" id="7">
+            <next>
+              <block type="robot_delay" id="9" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="16">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="led_select" id="25" inline="true">
+                    <field name="ACTION">ON</field>
+                    <value name="LED">
+                      <block type="math_number" id="35">
+                        <field name="NUM">6</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_left" id="54">
+                        <next>
+                          <block type="robot_delay" id="56" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="63">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_forward" id="83">
+                                <next>
+                                  <block type="robot_delay" id="85" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="92">
+                                        <field name="NUM">1000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_drawtext" id="44">
+                                        <field name="TEXT">i am back</field>
+                                        <next>
+                                          <block type="led_select" id="109" inline="true">
+                                            <field name="ACTION">ON</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="116">
+                                                <field name="NUM">5</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_stop" id="6"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="8"></block>
     </next>
   </block>
 </xml>
